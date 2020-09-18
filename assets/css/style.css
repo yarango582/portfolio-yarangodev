@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+/* Helpers */
+
+.active{
+    color: #ffc107 !important;
+}
+
+/* Helpers */
+
+.nav-desktop-container{
+    display: none;
+}
+
+/*Ajustes especiales por medidas */
+
+@media (min-width: 576px) and (max-width: 767px){
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media (min-width: 992px) {
+    .nav{
+        display: none;
+    }
+    .main{
+        margin-left: 15%;
+        width: 85%;
+    }
+    .background{
+        height: 100vh;
+    }
+
+    .row{
+        margin-top: 10%;
+    }
+
+    .nav-desktop-container{
+        display: block;
+        background-color: #17202A;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 15%;
+        
+    }
+
+}
+
+/*Ajustes especiales por medidas */
+
+
+.nav{
+    background-color: #17202A;
+}
+
+.nav-list {
+    text-align: center;
+}
+
+.nav-list__item > a {
+    display: inline-block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list__item > a:hover {
+    color: #ffc107;
+}
+
+.background {    
+    position: relative;
+    background: url("../images/background/img_home.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5rem;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.521);
+}
+.background-text{
+    position: relative;
+}
+
+.background-text > h3 {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+.background-text > h2 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.section-button > a{
+    
+    position: relative;
+    padding: 0.8rem 0.8rem;
+    background: #ffc107;
+    border-radius: 0.6rem;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.section-button{
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.section-button > a:hover {
+    font-weight: bold;
+}
+
+.section-arrow{
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.section-arrow > a {
+    position: relative;
+    text-align: center;
+    color: #ffc107;
+}
+
+.section-arrow > a:hover {
+    color: white;
+}
+
+.profile{
+    width: 100%;
+    padding: 1%;
+}
+
+.profile-img{
+    background: url("../images/me/IMG_0582.JPEG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.5px white solid;
+    padding: 50%;
+    border-radius: 100%;
+    margin-top: 10%;
+}
+
+.profile-title{
+    text-align: center;
+    color: white;
+    margin-top: 6%;
+}
+
+.menu{
+    text-align: center;
+    border-top: 1px #ffc107 solid;
+    border-bottom: 1px #ffc107 solid;
+    margin-top: 10%;
+    padding-bottom: 20%;
+}
+
+.menu-list > li {
+    margin-top: 20%;
+}
+
+.menu-list__item > a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-list__item > a:hover {
+    color: #ffc107;
+}
+
+.social-icos-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.social-icos-list__item{
+    margin-top: 8%;
+    padding-right: 6%;
+}
+
+.social-icos-list__item > a {
+    color: white;
+}
+
+.social-icos-list__item > a:hover {
+    color: #ffc107;
+}
