@@ -32,17 +32,19 @@
     .nav{
         display: none;
     }
-    .main{
+    .main, .section{
         margin-left: 15%;
         width: 85%;
     }
+
     .background{
         height: 100vh;
     }
 
-    .row{
+    .background > .row{
         margin-top: 10%;
     }
+
 
     .nav-desktop-container{
         display: block;
@@ -154,7 +156,7 @@
 
 .profile{
     width: 100%;
-    padding: 1%;
+    padding: 10%;
 }
 
 .profile-img{
@@ -162,7 +164,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border: 0.5px white solid;
+    border: 1px gray solid;
     padding: 50%;
     border-radius: 100%;
     margin-top: 10%;
@@ -171,7 +173,7 @@
 .profile-title{
     text-align: center;
     color: white;
-    margin-top: 6%;
+    margin-top: 1%;
 }
 
 .menu{
@@ -202,7 +204,7 @@
 }
 
 .social-icos-list__item{
-    margin-top: 8%;
+    margin-top: 20%;
     padding-right: 6%;
 }
 
@@ -212,4 +214,63 @@
 
 .social-icos-list__item > a:hover {
     color: #ffc107;
+}
+
+.section {
+    text-align: center;
+    margin-top: 8%;
+}
+
+.title-p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.title-p > .line {
+    
+    display: flex;
+    color: #ffc107;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+
+}
+
+.title-p > .name {
+    
+    color: #ffc107;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.text{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: justify;
+    color: #4c4d4d;
+    padding: 5px;
+}
+
+.personal-data-list{
+    list-style: none;
+}
+
+.personal-data-list__item{
+    text-decoration: none;
+}
+
+.mail {
+    color: #4c4d4d;
+    text-decoration: none;
+}
+
+.download-button{
+    display: flex;
+    width: 9rem;
+    margin-top: 10px;
+    text-align: start;
+    padding: 10px 10px;
+    text-decoration: none;
+    background-color: #ffc107;
+    color: black;
+    border-radius: 6px;
 }
