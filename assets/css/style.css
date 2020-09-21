@@ -256,6 +256,7 @@
 
 .personal-data-list__item{
     text-decoration: none;
+    border-bottom: 1px #dddddd solid;
 }
 
 .mail {
@@ -273,4 +274,15 @@
     background-color: #ffc107;
     color: black;
     border-radius: 6px;
+}
+
+.feature{
+    margin-top: 2rem;
+    border-right: 1px#dddddd solid;
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.feature-text{
+    color: #4c4d4d;
 }
