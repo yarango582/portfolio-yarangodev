@@ -12,6 +12,9 @@
     color: #ffc107 !important;
 }
 
+.txt-white{
+    color: white;
+}
 /* Helpers */
 
 .nav-desktop-container{
@@ -21,6 +24,7 @@
 /*Ajustes especiales por medidas */
 
 @media (min-width: 576px) and (max-width: 767px){
+
 
 }
 
@@ -59,6 +63,7 @@
         
     }
 
+
 }
 
 /*Ajustes especiales por medidas */
@@ -70,6 +75,7 @@
 
 .nav-list {
     text-align: center;
+    list-style: none;
 }
 
 .nav-list__item > a {
@@ -86,7 +92,7 @@
 
 .background {    
     position: relative;
-    background: url("../images/background/img_home.jpg");
+    background: url("../images/background/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -124,8 +130,8 @@
     position: relative;
     padding: 0.8rem 0.8rem;
     background: #ffc107;
-    border-radius: 0.6rem;
-    border: 1px solid black;
+    border-radius: 6rem;
+    border: 1px solid #ffc107;
     text-decoration: none;
     color: black;
 }
@@ -141,7 +147,7 @@
 
 .section-arrow{
     text-align: center;
-    padding-top: 1.5rem;
+    padding-top: 12%;
 }
 
 .section-arrow > a {
@@ -151,7 +157,7 @@
 }
 
 .section-arrow > a:hover {
-    color: white;
+    color: #ff7707;
 }
 
 .profile{
@@ -164,7 +170,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border: 1px gray solid;
+    border: 0.1rem gray solid;
     padding: 50%;
     border-radius: 100%;
     margin-top: 10%;
@@ -250,6 +256,10 @@
     padding: 5px;
 }
 
+.title-name{
+    text-align: justify;
+}
+
 .personal-data-list{
     list-style: none;
 }
@@ -286,3 +296,56 @@
 .feature-text{
     color: #4c4d4d;
 }
+
+.bg-dark{
+    background-color: #343a40;
+}
+
+.category-list > .category-list__item{
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.category-list__item > a{
+    text-decoration: none;
+    color: white;
+}
+
+.category-list__item > a:hover{
+    color: #ffc107;
+}
+
+.selected{
+    color: #ffc107 !important;
+    text-decoration: underline;
+}
+
+.card{
+    margin-top: 2rem;  
+    border-radius: 4px;
+    padding-bottom: 1rem;
+    background-color: #ffc107e7;
+}
+
+.card-title{
+    padding: 1rem;
+}
+
+.card-text{
+    padding: 1rem;
+    text-align: justify;
+}
+
+.card-button{
+    padding: 0.5rem 0.5rem;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.card-button:hover{
+    font-weight: bold;
+}
+
