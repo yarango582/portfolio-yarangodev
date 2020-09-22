@@ -10,9 +10,8 @@
     <title>YarangoDev</title>
 </head>
 <body>
-
     <!-- Navegacion Movil -->
-    <nav class="nav">
+    <nav class="nav" id="nav-movil">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-sm-12">
@@ -27,7 +26,7 @@
                             <a href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-list__item">
-                            <a href="#">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -35,7 +34,7 @@
         </div>
     </nav>
     <!-- Navegacion Escritorio -->
-    <nav class="nav-desktop">
+    <nav class="nav-desktop" id="nav-desktop">
         <div class="nav-desktop-container">
             <div class="container-fluid">
                 <div class="profile">
@@ -56,7 +55,7 @@
                             <a href="#portfolio">Portfolio</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -74,7 +73,7 @@
         </div>
     </nav>
     <!-- Home -->
-    <main class="main">
+    <main class="main" id="main">
         <div class="container-fluid">
           <!-- Backgroung home -->
           <div class="background" id="home">
@@ -112,7 +111,7 @@
                 <div class="col-12 col-sm-12">
                     <!-- Siguiente seccion -->
                     <div class="section-arrow">
-                        <a href="#aboutme">
+                        <a href="#contact">
                             <i class="fas fa-arrow-circle-down fa-2x"></i>
                         </a>
                     </div>
@@ -122,7 +121,7 @@
         </div>
     </main>
     <!-- About Me -->
-    <section class="section">
+    <section class="section" id="section-aboutme">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-sm-12">
@@ -232,7 +231,7 @@
             </div>
     </section>
     <!-- Portfolio -->
-    <section class="section">
+    <section class="section" id="section-portfolio">
         <div class="container-fluid bg-dark">
             <div class="row">
                 <div class="col-12 col-sm-12">
@@ -313,6 +312,44 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="section" id="section-contact">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <h3 class="title-p" id="contact">
+                        Get in Touch
+                        <span class="line">_________</span>
+                    </h3>   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <div class="form-contact">
+                        <h3 class="tittle-p">
+                            Send us a note
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-contact-box">
+                <form action="#" method="post" class="form-contact">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <input type="text" name="contact-name" id="contact-name" placeholder="Name">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <input type="email" name="contact-email" id="contact-emial" placeholder="Email">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <textarea name="contact-message" id="contact-message" cols="30" rows="10" placeholder="Tell us more about your needs..."></textarea>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <button type="submit" class="contact-button">Send Message</button>
+                    </div>
+                </form>    
+            </div>            
         </div>
     </section>
 </body>
