@@ -1,4 +1,3 @@
-import Portfolio from './portfolio.js';
 import Categories from './categories.js';
 import Project from './project.js';
 
@@ -31,6 +30,35 @@ export default class UI{
             })
         }
 
+    }
+
+    printCardPortfolio(){
+        
+        let project = new Project;
+        let app = [];
+        app = project.getProjects();
+        let container = document.getElementById('container-cards');
+        container.innerHTML = '';
+
+        app.forEach((card, index) => {
+
+            container.innerHTML += `
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="card" id="card-${index+1}" style="height: 16rem;>
+                <h3 class="card-title">
+                    <strong>${card.name}</strong>
+                </h3>
+                <p class="card-text">
+                    ${card.description}
+                </p>
+                <a href="${card.url}" class="card-button" target="_blank"></a>
+            </div>
+            </div>
+            `;
+
+
+        })
+        
     }
 
 }

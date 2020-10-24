@@ -331,11 +331,12 @@
 
 .card{
     position: relative;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 6%;  
     border-radius: 4px;
     padding-bottom: 1rem;
-    background-color: #ffc107;
+    background-color: #ffc107d7;
+    padding: 1rem;
 }
 
 
@@ -346,30 +347,17 @@
 .card-text{
     padding: 1rem;
     text-align: justify;
-    margin-bottom: 30%;
 }
 
-.overlay-img{
+
+.card-button{
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-}
-
-.overlay-img:hover{
-    background: url('../images/portfolio/smarttraining.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.8;
-}
-
-.card-button{
-    position: relative;
     padding: 0.5rem 0.5rem;
     border-radius: 4px;
-    background-color: black;
     color: white;
     text-decoration: none;
 }
