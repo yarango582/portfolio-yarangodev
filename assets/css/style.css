@@ -195,6 +195,7 @@
 
 .menu-list > li {
     margin-top: 20%;
+    list-style: none;
 }
 
 .menu-list__item > a {
@@ -425,4 +426,8 @@ textarea::placeholder{
 
 .form-contact-box{
     justify-content: center;
+}
+
+a{
+    cursor: pointer;
 }
