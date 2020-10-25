@@ -23,10 +23,23 @@ export default class UI{
 
         let buttonsCategorie = document.getElementsByClassName('category');
 
+        function cleanCategories(){
+            const buttonsCategorie = document.getElementsByClassName('category');
+            for(let j = 0; j<buttonsCategorie.length; j++){
+                buttonsCategorie.item(j).classList.remove('selected');
+            }
+        }
+
+        buttonsCategorie.item(0).classList.toggle('selected'); //default
+
         for(let i = 0; i<buttonsCategorie.length; i++){
 
+            
             buttonsCategorie.item(i).addEventListener('click', () =>{
-                buttonsCategorie.item(i).toggleAttribute('selected');
+
+                cleanCategories(); //reinicia las clases
+                buttonsCategorie.item(i).classList.toggle('selected');//asigna nueva
+                
             })
         }
 
@@ -60,5 +73,6 @@ export default class UI{
         })
         
     }
+    
 
 }
