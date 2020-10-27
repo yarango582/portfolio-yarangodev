@@ -1,6 +1,6 @@
 export default class Project{
 
-    getProjects(){
+    getProjects(){  
 
         let app =  [];
         let matterApp = {
@@ -18,8 +18,17 @@ export default class Project{
             categorie: 'API REST',
             url: 'https://trivia-app-yarango.netlify.app'
         }
+        let smartTraining = {
+            name: 'Smart-Training',
+            description: 'Application designed for the registration management of SmartTraining Gym',
+            categorie: 'Brand',
+            url: 'https://smarttraining.com.co/'
+        }
+
         app.push(matterApp);
         app.push(triviaApp);
+        app.push(smartTraining);
+
         return app;
     }
 
