@@ -24,11 +24,25 @@ export default class Project{
             categorie: 'Brand',
             url: 'https://smarttraining.com.co/'
         }
+        let pokeAPI = {
+            name: 'Poke API',
+            description: 'RESTFul API - ReactJS',
+            categorie: 'API REST',
+            url: 'https://pokedex-yarangodev.netlify.app/'
+        }
+        let servidorNode = {
+            name: 'Servidor Auth - Node',
+            description: 'Servidor Auth, JWT, Node, Express, Babel, API',
+            categorie: 'API REST',
+            url: 'https://github.com/yarango582/servidor_node'
+        }
 
         app.push(matterApp);
         app.push(triviaApp);
+        app.push(pokeAPI);
+        app.push(servidorNode);
         app.push(smartTraining);
-
+        
         return app;
     }
 
