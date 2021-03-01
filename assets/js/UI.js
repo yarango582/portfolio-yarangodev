@@ -3,47 +3,47 @@ import Project from './project.js';
 
 export default class UI{
 
-    printCategories(){
+    // printCategories(){
 
-        let filtre = [];
-        let categories = new Categories();
-        filtre = categories.getCategories();
-        let container = document.getElementById('categorie');
-        container.innerHTML = '';
+    //     let filtre = [];
+    //     let categories = new Categories();
+    //     filtre = categories.getCategories();
+    //     let container = document.getElementById('categorie');
+    //     container.innerHTML = '';
 
-        filtre.forEach((categorie, index) =>{
+    //     filtre.forEach((categorie, index) =>{
 
-            container.innerHTML += 
-            `                    
-            <li class="category-list__item">
-                <a class="category" type="button" id="button-categorie-${index+1}">${categorie}</a>
-                </li>
-            `
-        })
+    //         container.innerHTML += 
+    //         `                    
+    //         <li class="category-list__item">
+    //             <a class="category" type="button" id="button-categorie-${index+1}">${categorie}</a>
+    //             </li>
+    //         `
+    //     })
 
-        let buttonsCategorie = document.getElementsByClassName('category');
+    //     let buttonsCategorie = document.getElementsByClassName('category');
 
-        function cleanCategories(){
-            const buttonsCategorie = document.getElementsByClassName('category');
-            for(let j = 0; j<buttonsCategorie.length; j++){
-                buttonsCategorie.item(j).classList.remove('selected');
-            }
-        }
+    //     function cleanCategories(){
+    //         const buttonsCategorie = document.getElementsByClassName('category');
+    //         for(let j = 0; j<buttonsCategorie.length; j++){
+    //             buttonsCategorie.item(j).classList.remove('selected');
+    //         }
+    //     }
 
-        buttonsCategorie.item(0).classList.toggle('selected'); //default
+    //     buttonsCategorie.item(0).classList.toggle('selected'); //default
 
-        for(let i = 0; i<buttonsCategorie.length; i++){
+    //     for(let i = 0; i<buttonsCategorie.length; i++){
 
             
-            buttonsCategorie.item(i).addEventListener('click', () =>{
+    //         buttonsCategorie.item(i).addEventListener('click', () =>{
 
-                cleanCategories(); //reinicia las clases
-                buttonsCategorie.item(i).classList.toggle('selected');//asigna nueva
+    //             cleanCategories(); //reinicia las clases
+    //             buttonsCategorie.item(i).classList.toggle('selected');//asigna nueva
                 
-            })
-        }
+    //         })
+    //     }
 
-    }
+    // }
 
     printCardPortfolio(){
         
