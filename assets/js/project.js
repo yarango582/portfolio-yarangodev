@@ -18,12 +18,6 @@ export default class Project{
             categorie: 'API REST',
             url: 'https://trivia-app-yarango.netlify.app'
         }
-        let smartTraining = {
-            name: 'Smart-Training',
-            description: 'Application designed for the registration management of SmartTraining Gym',
-            categorie: 'Brand',
-            url: 'https://smarttraining.com.co/'
-        }
         let pokeAPI = {
             name: 'Poke API',
             description: 'RESTFul API - ReactJS',
@@ -41,7 +35,6 @@ export default class Project{
         app.push(triviaApp);
         app.push(pokeAPI);
         app.push(servidorNode);
-        app.push(smartTraining);
         
         return app;
     }
